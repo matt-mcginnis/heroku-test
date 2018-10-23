@@ -10,10 +10,12 @@
   <%= @player.team %>
 </p>
 
+<% if @player.avatar.url != nil %>
 <p>
   <strong>Avatar:</strong>
   <%= image_tag @player.avatar.url %>
 </p>
+<% end %>
 
 <%= link_to 'Edit', edit_player_path(@player) %> |
 <%= link_to 'Back', players_path %>
