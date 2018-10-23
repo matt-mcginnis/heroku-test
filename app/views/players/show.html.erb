@@ -12,7 +12,7 @@
 
 <p>
   <strong>Avatar:</strong>
-  <%= @player.avatar %>
+  <%= image_tag @player.avatar.url %>
 </p>
 
 <%= link_to 'Edit', edit_player_path(@player) %> |
